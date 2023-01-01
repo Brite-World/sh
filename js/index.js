@@ -23,7 +23,7 @@ if(day!="Sunday")
 }
 else
 {
-  if (today >= 11 && today <= 16) {
+  if (today >= 11 && today <= 18) {
    $("#status").text("OPEN");
   } else {
     $("#status").text("CLOSED");
