@@ -4,6 +4,14 @@ const d = new Date();
 let day = weekday[d.getDay()];
 var today = d.getHours();
 
+$(document).ready(function(){
+  setInterval(callme,1500);
+})
+
+function callme(){
+  $("#status").animate({opacity:0.5}).animate({opacity:1.5});
+}
+
 if(day!="Sunday")
 {
   if (today >= 10 && today <= 22) {
